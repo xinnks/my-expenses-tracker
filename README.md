@@ -33,6 +33,13 @@ Install the project's dependencies:
 bun install
 ```
 
+Create the local database folder and an empty database:
+
+```bash
+mkdir dbs
+touch dbs/expenses.db
+```
+
 ## Development
 
 To start the development server run:
@@ -49,7 +56,7 @@ Add a new expense:
 curl "http://127.0.0.1:$PORT/records" \
   -X POST \
   -H 'Content-Type: application/json' \
-  -d '{"ammount": 200,"information": "Bought something nice!"}'
+  -d '{"amount": 200,"information": "Bought something nice!"}'
 ```
 
 Get all expenses:

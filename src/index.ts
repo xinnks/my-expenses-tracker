@@ -9,7 +9,7 @@ const db = createClient({
   url: process.env.LOCAL_DB as string,
   syncUrl: process.env.TURSO_DATABASE_URL,
   authToken: process.env.TURSO_AUTH_TOKEN,
-  // syncInterval: 15 - https://docs.turso.tech/sdk/ts/reference#periodic-sync,
+  syncInterval: 15, // - https://docs.turso.tech/sdk/ts/reference#periodic-sync,
   encryptionKey: process.env.SECRET, // embedded replica will be encrypted hence not readable by sqlite3
 });
 

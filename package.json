@@ -6,7 +6,7 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "@libsql/client": "^0.5.6",
+    "@libsql/client": "^0.6.2",
     "elysia": "latest",
     "uuid": "^9.0.1"
   },

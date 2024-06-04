@@ -41,7 +41,7 @@ yarn-error.log*
 package-lock.json
 **/*.bun
 
-*.db*
+dbs
 .http
 .env
 *.toml
